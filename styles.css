@@ -11,10 +11,22 @@ body {
 }
 
 header {
-    background-color: #0044cc;
+    display: flex;                  /* activa flexbox */
+    align-items: center;            /* centra logo y título en vertical */
+    justify-content: space-between; /* logo-título a la izquierda, menú a la derecha */
+    background-color: #000000;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 50px;       /* tamaño del logo */
+    margin-right: 15px; /* espacio entre logo y texto */
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -54,4 +66,28 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: 30px;
+}
+#contact {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+}
+#imagen-especial {
+    background-color: #ffffff;    /* fondo negro como el de contacto */
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.icono-especial {
+    max-width: 90%;  /* la imagen nunca será más grande que la sección */
+    height: auto;     /* mantiene la proporción */
+    display: block;   /* asegura que se comporte como bloque */
+    margin: 0 auto;   /* la centra */
 }
