@@ -1,27 +1,31 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo general */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Encabezado */
 header {
-    display: flex;                  /* activa flexbox */
-    align-items: center;            /* centra logo y título en vertical */
-    justify-content: space-between; /* logo-título a la izquierda, menú a la derecha */
-    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 40px;
 }
 
 header img {
-    height: 50px;       /* tamaño del logo */
-    margin-right: 15px; /* espacio entre logo y texto */
+    height: 50px;
+    margin-right: 10px;
 }
 
 .logo-titulo {
@@ -29,55 +33,70 @@ header img {
     align-items: center;
 }
 
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Secciones */
 main {
-    padding: 40px;
-    text-align: center;
+    padding: 40px 20px;
 }
 
 section {
     background: white;
-    padding: 20px;
-    margin: auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
+section h2 {
+    margin-bottom: 20px;
+    color: #222;
 }
-#contact {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 40px 20px;
+
+/* Lista de servicios */
+.lista-servicios {
+    text-align: left;
+    list-style: none;
+    padding: 0;
 }
+
+.lista-servicios li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.lista-servicios strong {
+    color: #000000;
+}
+
+/* Imagen especial */
 #imagen-especial {
-    background-color: #ffffff;    /* fondo negro como el de contacto */
-    text-align: center;
-    padding: 40px 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
+    background-color: #fff;
 }
 
 .contenedor-imagen {
@@ -86,8 +105,34 @@ footer {
 }
 
 .icono-especial {
-    max-width: 90%;  /* la imagen nunca será más grande que la sección */
-    height: auto;     /* mantiene la proporción */
-    display: block;   /* asegura que se comporte como bloque */
-    margin: 0 auto;   /* la centra */
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contacto */
+#contact {
+    background-color: #f9f9f9;
+}
+
+.icono-contacto {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.telefono {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
 }
