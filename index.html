@@ -13,6 +13,8 @@
             <img src="logo1.png" alt="Logo de la empresa">
             <h1>Jazaq Teknologia</h1>
         </div>
+        <!-- Botón menú móvil -->
+        <div class="menu-toggle">☰</div>
         <nav>
             <ul>
                 <li><a href="#services">Servicios</a></li>
@@ -21,12 +23,11 @@
         </nav>
     </header>
 
-    <!-- Sección de servicios -->
-    <main>
-        <section id="services">
-            <h2>Servicios</h2>
-            <ul class="lista-servicios">
-                <li><strong>Generamos tus páginas de presentación</strong></li>
+    <!-- Sección Servicios -->
+    <section id="services" class="animate">
+        <h2>Nuestros Servicios</h2>
+        <li></li>
+        <li><strong>Generamos tus páginas de presentación</strong></li>
                 <li>Creamos sitios web modernos y profesionales para que tu marca tenga la mejor presencia en línea.</li>
                 <li><strong>Hacemos e-commerce y manejos de redes</strong></li>
                 <li>Diseñamos y desarrollamos tiendas virtuales fáciles de usar, además de gestionar tus redes sociales para aumentar tu alcance.</li>
@@ -34,27 +35,31 @@
                 <li>Estrategias digitales efectivas para dar a conocer tu negocio y atraer más clientes.</li>
                 <li><strong>Innovación y resultados</strong></li>
                 <li>Implementamos soluciones creativas que generan valor real y resultados medibles para tu empresa.</li>
-            </ul>
-        </section>
+    </section>
 
-        <!-- Imagen especial -->
-        <section id="imagen-especial">
-            <div class="contenedor-imagen">
-                <img src="banner1.png" alt="Imagen especial" class="icono-especial">
-            </div>
-        </section>
 
-        <!-- Contacto -->
-        <section id="contact">
-            <h2>Contáctanos:</h2>
-            <p class="telefono">📞 3232313026</p>
-            <p class="telefono">📞 3228239538</p>
-        </section>
-    </main>
+    <!-- Carrusel de Imágenes -->
+    <section id="carousel-section" class="animate">
+        <h2>Proyectos Destacados</h2>
+        <div class="carousel">
+            <button class="carousel-prev">⟨</button>
+            <img src="banner1.png" alt="Imagen 1">
+            <img src="banner2.jpg" alt="Imagen 2">
+            <img src="banner3.jpg" alt="Imagen 3">
+            <button class="carousel-next">⟩</button>
+        </div>
+    </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Jazaq Teknologia. Todos los derechos reservados.</p>
-    </footer>
+    <!-- Contacto -->
+    <section id="contact" class="animate">
+        <h2>Contáctanos</h2>
+        <p>Tel: 3232313026</p>
+        <a href="https://wa.me/573232313026" target="_blank">
+    <button>Enviar Mensaje</button>
+</a>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
